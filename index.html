@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TechBridge Solutions</title>
+    <title>Project Partners LLC</title>
     <style>
         * {
             margin: 0;
@@ -17,7 +17,7 @@
             padding: 1rem 5%;
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: center;ss
         }
 
         .logo {
@@ -87,7 +87,7 @@
             background: #f5f5f5;
             text-align: center;
         }
-
+        
         .contact-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -116,9 +116,44 @@
         }
     </style>
 </head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body, html {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            background: rgba(26, 26, 26, 0.8);
+            backdrop-filter: blur(5px);
+        }
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .hero {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('work_wallpaper.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
 <body>
     <nav>
-        <div class="logo">TechBridge</div>
+        <div class="logo">Project Partners LLC</div>
         <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
@@ -130,59 +165,277 @@
 
     <div class="hero" id="home">
         <div class="hero-content">
-            <h1>TechBridge Solutions</h1>
-            <p>Bridging Global Tech Talent with Innovation</p>
+            <h1 style="font-size: 4.5rem;">Project Partners LLC</h1>
+            <p style="font-size: 2rem;">IT Consulting — Data Analysis & AI Applications Specialist</p>
         </div>
     </div>
+</body>
 
-    <section class="section" id="about">
-        <div class="about-grid">
-            <div>
-                <h2>About Us</h2>
-                <p>We are a premier technology solutions company specializing in connecting exceptional talent with innovative companies worldwide. Our mission is to bridge the global technology gap by providing seamless staffing solutions that drive growth and innovation.</p>
-            </div>
-            <img src="/api/placeholder/400/300" alt="About Us Illustration">
+<section class="section" id="about">
+    <div class="about-grid">
+        <div class="about-content">
+            <h2 style="font-family: 'Montserrat', sans-serif; letter-spacing: 1px;">About Us</h2>
+            <p style="font-family: 'Open Sans', sans-serif; letter-spacing: 0.5px; line-height: 1.8;">At <strong>Project Partners LLC</strong>, we transform business challenges into data-driven opportunities. As strategic innovators, we bridge the gap between complex data landscapes and breakthrough AI solutions. Our expertise in cutting-edge data analysis and AI applications empowers businesses to unlock unprecedented efficiency, make razor-sharp decisions, and accelerate growth. We don't just deliver technology—we craft intelligent, custom-engineered solutions that turn your data into your most powerful competitive advantage.</p>
         </div>
-    </section>
+        <div class="about-image">
+            <img src="./team project.webp" alt="AI and Data Solutions Illustration" style="max-width: 100%; height: auto;">
+        </div>
+    </div>
+</section>
 
-    <section class="section" id="services">
-        <h2>Our Services</h2>
-        <div class="services-grid">
+<style>
+    /* General Section Styling */
+    #about {
+        background: linear-gradient(135deg, #0a1535, #1b4449); /* Darker blue gradient */
+        color: #fff;
+        padding: 60px 20px;
+        border-radius: 0; /* Sharp corners */
+    }
+
+    /* Grid Layout */
+    .about-grid {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Content Styling */
+    .about-content {
+        flex: 1;
+    }
+
+    .about-content h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .about-content p {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        color: #e0e0e0; /* Lighter text for better readability */
+    }
+
+    .about-content strong {
+        color: #fff;
+    }
+
+    /* Image Styling */
+    .about-image {
+        flex: 1;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0; /* Sharp corners */
+        border: 3px solid rgba(255, 255, 255, 0.15); /* Subtle border */
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .about-grid {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .about-image {
+            margin-top: 20px;
+        }
+    }
+</style>
+<section class="section" id="services">
+    <h2 style="text-align: center; font-size: 2.5rem;">Our Services</h2>
+    <div class="services-grid">
+        <div class="row">
             <div class="service-card">
-                <h3>Talent Acquisition</h3>
-                <p>Expert recruitment services tailored to your specific technical requirements and company culture.</p>
+                <h3>End-to-End AI Solutions</h3>
+                <p>Comprehensive service covering the entire AI project lifecycle—from strategy and data assessment to model development, deployment, and ongoing optimization. Tailored to meet specific business objectives.</p>
             </div>
             <div class="service-card">
-                <h3>Team Building</h3>
-                <p>Custom team assembly services to create cohesive, high-performing technical teams.</p>
+                <h3>AI Applications Development</h3>
+                <p>Custom-engineered AI solutions, including conversational AI, chatbots, machine learning, and deep learning models, designed to solve complex business challenges.</p>
             </div>
             <div class="service-card">
-                <h3>Scaling Solutions</h3>
-                <p>Flexible staffing solutions to help your business scale efficiently and effectively.</p>
+                <h3>Data Analysis & Visualization</h3>
+                <p>Advanced data analysis and visualization services using tools like Tableau, Power BI, and Python libraries to turn raw data into actionable insights.</p>
             </div>
         </div>
-    </section>
+        <div class="row">
+            <div class="service-card">
+                <h3>Predictive Analytics</h3>
+                <p>Leverage predictive analytics and time series forecasting to make data-driven decisions and optimize business performance.</p>
+            </div>
+            <div class="service-card">
+                <h3>Computer Vision Solutions</h3>
+                <p>Develop robust computer vision systems for applications like real-time object detection, image analysis, and video processing.</p>
+            </div>
+            <div class="service-card">
+                <h3>A La Carte Services</h3>
+                <p>Flexible, targeted services including custom model development, performance optimization, and specific AI solution components to meet precise requirements and budgets.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; /* Space between rows */
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem; /* Space between cards in a row */
+    }
+
+    .service-card {
+        flex: 1;
+        background: #f9f9f9;
+        padding: 1.5rem;
+        border: 2px solid #007BFF; /* Adds a border around each card */
+        border-radius: 8px; /* Rounds the edges of the card */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow for depth */
+        text-align: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+    }
+
+    .service-card:hover {
+        transform: translateY(-5px); /* Slight lift on hover */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhances the shadow on hover */
+    }
+</style>
+<section class="section" id="core-competencies">
+    <h2 style="font-size: 2.3rem;">Core Competencies</h2>
+    <div class="competencies-bubbles">
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">AI Applications Development</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Conversational AI & Chatbots</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Machine Learning Engineering</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Computer Vision & Image Analysis</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Predictive Analytics & Time Series Forecasting</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Deep Learning Model Development</span>
+        <span class="bubble" style="font-size: 1.2rem; padding: 15px 30px;">Data Visualization (Tableau, Power BI)</span>
+    </div>
+</section>
+
+<style>
+    .competencies-bubbles {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .bubble {
+        background: #007BFF;
+        color: #fff;
+        padding: 12px 24px;
+        border-radius: 30px;
+        font-size: 1rem;
+        font-weight: 500;
+        transition: background 0.3s ease, transform 0.3s ease;
+        cursor: pointer;
+    }
+
+    .bubble:hover {
+        background: #0056b3;
+        transform: scale(1.05);
+        }
+
+        #core-competencies {
+        text-align: center;
+        padding: 40px 20px;
+        }
+
+        #core-competencies h2 {
+        font-size: 2.5rem;  /* Increased from 2rem */
+        margin-bottom: 20px;
+        color: #333;
+        }
+    </style>
 
     <section class="section careers-section" id="careers">
-        <h2>Join Our Team</h2>
-        <p>We're always looking for talented professionals to join our growing team.</p>
-        <p>Send your resume to: careers@techbridge.com</p>
+        <div style="padding: 0 5%; text-align: left;"></div>
+            <h2 style="font-size: 2.3rem;">Join Our Team</h2>
+            <p style="font-size: 1.2rem;">At <strong>Project Partners LLC</strong>, we are passionate about innovation and excellence in AI and data solutions. We're always looking for talented professionals to join our dynamic team of experts.</p>
+            <p style="font-size: 1.2rem;">If you're skilled in AI, machine learning, data analysis, or software development, we'd love to hear from you.</p>
+            <p style="font-size: 1.2rem;">Send your resume to: <strong>projpartnersllc@gmail.com</strong></p>
+        </div>
     </section>
-
     <section class="section" id="contact">
         <div class="contact-grid">
             <div class="contact-info">
                 <h2>Contact Us</h2>
-                <p>Have questions? We'd love to hear from you.</p>
-                <p>Email: info@techbridge.com</p>
-                <p>Phone: +1 (555) 123-4567</p>
+                <p>Have questions or need expert AI and data solutions? We'd love to hear from you.</p>
+                <p>
+                    <i class="fas fa-envelope"></i>
+                    Email: <strong>projpartnersllc@gmail.com</strong>
+                </p>
+                <p>
+                    <i class="fas fa-phone"></i>
+                    Phone: <strong>+91 6289 982 030</strong>
+                </p>
+                <p>
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp: <a href="https://wa.me/916289982030" target="_blank" style="text-decoration: none; color: inherit;"><strong>+91 6289 982 030</strong></a>
+                </p>
             </div>
-            <img src="/api/placeholder/400/300" alt="Contact Illustration">
+            <div style="max-width: 300px; height: 300px; display: flex; align-items: center; justify-content: flex-end;">
+                <img src="./contacti.jpg" alt="AI and Data Solutions Contact Illustration" style="width: 70%; height: 100%; object-fit: contain;">
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 TechBridge Solutions. All Rights Reserved.</p>
-    </footer>
+<!-- Add Font Awesome CSS in the head section -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<style>
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-info i {
+    color: #007BFF;
+}
+
+.social-icons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #007BFF;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #0056b3;
+}
+
+</style>
+
+<footer>
+    <nav>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#careers">Careers</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+    <p>&copy; 2025 Project Partners LLC. All Rights Reserved.</p>
+</footer>
 </body>
 </html>
+
